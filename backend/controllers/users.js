@@ -38,26 +38,28 @@ router.post("/signup", (req, res) => {
   }
 });
 
-router.post('/login', async(req,res) => {
-    const foundUser = await.User.findOne({username: req.body.username})
-    if (foundUser && foundUser.password === req.body.password) {
-        const payload = {id: foundUser.id }
-        const token = jwt.encode(payload, config.jwtSecret)
-        res.json({
-            username: foundUser.username, admin: foundUser.admin, token: token
-        })
-    } else {
-        console.log('user does not exist')
-        res.sendStatus(401)
-    }
-})
+router.post("/login", async (req, res) => {
+  const foundUser = await User.findOne({ username: req.body.username });
+  if (foundUser && foundUser.password === req.body.password) {
+    const payload = { id: foundUser.id };
+    const token = jwt.encode(payload, config.jwtSecret);
+    res.json({
+      username: foundUser.username,
+      admin: foundUser.admin,
+      token: token,
+    });
+  } else {
+    console.log("user does not exist");
+    res.sendStatus(401);
+  }
+});
 
-router.get('/', async(req, res) => {
-    const token = req.headers.authorization
-    const decode = jwt.decode(token, cnfig.jwtSecret)
-    const foundUser = await db.User.findById(decode.id)
-    console.log(foundUser)
-    res.json(foundUser)
-})
+router.get("/", async (req, res) => {
+  const token = req.headers.authorization;
+  const decode = jwt.decode(token, config.jwtSecret);
+  const foundUser = await db.User.findById(decode.id);
+  console.log(foundUser);
+  res.json(foundUser);
+});
 
 module.exports = router;

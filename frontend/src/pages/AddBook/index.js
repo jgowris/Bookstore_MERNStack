@@ -23,7 +23,7 @@ function AddBook({ books, setBooks }) {
   };
 
   return (
-    <div>
+    <div class="parent">
       <form class="child" onSubmit={handleSubmit}>
         <h2>Add a Book</h2>
         <br></br>
@@ -54,6 +54,90 @@ function AddBook({ books, setBooks }) {
               placeholder="Author name"
               onChange={handleChange}
               value={formState.author || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Published:</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="published"
+              placeholder="published date"
+              onChange={handleChange}
+              value={formState.published || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>ISBN: </label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="isbn"
+              placeholder="isbn"
+              onChange={handleChange}
+              value={formState.isbn || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Description:</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="abstract"
+              placeholder="Description"
+              onChange={handleChange}
+              value={formState.abstract || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Language: </label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="language"
+              placeholder="language"
+              onChange={handleChange}
+              value={formState.language || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Copies: </label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="number"
+              placeholder="copies"
+              onChange={handleChange}
+              value={formState.copies || ""}
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Bookcover Image: </label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="image"
+              placeholder="Book cover Image"
+              onChange={handleChange}
+              value={formState.image || ""}
             />
           </div>
         </div>
