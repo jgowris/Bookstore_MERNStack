@@ -22,7 +22,7 @@ export default function CreateReview() {
       <form onSubmit={handleSubmit}>
         <div>
           <div>
-            <label>Review Title:</label>
+            <label htmlFor="title">Review Title:</label>
           </div>
           <div>
             <input
@@ -37,7 +37,7 @@ export default function CreateReview() {
         </div>
         <div>
           <div>
-            <label>How do you rate this book?: </label>
+            <label htmlFor="rating">How do you rate this book?: </label>
           </div>
           <div>
             <select
@@ -71,7 +71,7 @@ export default function CreateReview() {
         </div>
         <div>
           <div>
-            <label>Reviewer:</label>
+            <label htmlFor="reviewer">Reviewer:</label>
           </div>
           <div>
             <input

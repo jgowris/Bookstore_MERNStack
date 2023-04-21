@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1em 2em;
+  border-bottom: 2px solid black;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Dancing Script" cursive, Geneva, Verdana, sans-serif;
+  height: 6em;
+}
+
+nav .nav-item:nth-last-of-type(2) a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: darkblue;
+}
+
+nav .nav-item:nth-last-of-type(2) a img {
+  margin-left: -5px;
+  height: 40px;
+}
+.logo {
+  height: 5.5 rem;
+  width: 6rem;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  position: absolute;
+  top: 0.2em;
+  left: 0.5em;
+}
+
+@media only screen and (max-device-width: 600px) {
+  nav {
+    padding: 0.5em;
+  }
+
+  nav .nav-item {
+    text-align: center;
+    width: 33%;
+  }
+
+  nav .nav-item:nth-last-of-type(2) h1 {
+    display: none;
+  }
+}
