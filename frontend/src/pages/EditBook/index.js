@@ -40,23 +40,23 @@ function EditBook({ shownBook, setShownBook, books, setBooks }) {
         <br></br>
         <div>
           <div>
-            <label>Book name:</label>
+            <label htmlFor="title">Book name:</label>
           </div>
           <div>
             <input
               required
               type="text"
-              id="name"
+              id="title"
               placeholder="Book name"
               onChange={handleChange}
-              value={formState.name || ""}
+              value={formState.title || ""}
             />
           </div>
         </div>
         <br></br>
         <div>
           <div>
-            <label>Author</label>
+            <label htmlFor="author">Author</label>
           </div>
           <div>
             <input
@@ -71,7 +71,7 @@ function EditBook({ shownBook, setShownBook, books, setBooks }) {
         <br></br>
         <div>
           <div>
-            <label>Published:</label>
+            <label htmlFor="published">Published:</label>
           </div>
           <div>
             <input
@@ -85,7 +85,7 @@ function EditBook({ shownBook, setShownBook, books, setBooks }) {
         </div>
         <div>
           <div>
-            <label>ISBN:</label>
+            <label htmlFor="isbn">ISBN:</label>
           </div>
           <div>
             <input
