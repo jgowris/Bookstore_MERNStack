@@ -1,0 +1,12 @@
+.parent {
+  background-color: white;
+  color: black;
+  height: 100vh;
+}
+
+.child {
+  background-color: rgb(171, 171, 175);
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+}
