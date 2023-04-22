@@ -88,15 +88,16 @@ export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
           <p>Description: {shownBook.abstract}</p>
         </div>
       </div>
-      <div>
-        <p>Use the form below to leave a Review:</p>
-        {/* <CreateReview /> */}
-      </div>
 
-      <div>
+      {/* <div>
+        <p>Use the form below to leave a Review:</p> */}
+        {/* <CreateReview /> */}
+      {/* </div> */}
+
+      {/* <div>
         <p>Reviews from Customers:</p>
         <div>{displayReview(shownBook.reviews)}</div>
-      </div>
+      </div> */}
       {editDeleteOptions}
     </main>
   );

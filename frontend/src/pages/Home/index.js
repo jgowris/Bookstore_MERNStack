@@ -17,8 +17,8 @@ export default function Home(props) {
   return (
     <div>
       <div>
-        <h1>Welcome to My Library</h1>
-        <p>Your one stop Library</p>
+        <h1>Welcome to My Bookstore</h1>
+        <p>Your one stop shop for all books</p>
         <br></br>
         <h3>
           Do you wish to{" "}
