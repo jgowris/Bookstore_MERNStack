@@ -71,7 +71,7 @@ export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
   return (
     <main>
       <div>
-        <div>
+        <div className="showBook">
           <div>
             <img src={shownBook.image} alt="Books"></img>
           </div>
@@ -81,17 +81,14 @@ export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
             <p>Published: {shownBook.published}</p>
             <p>ISBN: {shownBook.isbn}</p>
             <p>Language: {shownBook.language}</p>
+            <p>Description: {shownBook.abstract}</p>
           </div>
-        </div>
-        <div>
-          <p>Date Published: {shownBook.published}</p>
-          <p>Description: {shownBook.abstract}</p>
         </div>
       </div>
 
       {/* <div>
         <p>Use the form below to leave a Review:</p> */}
-        {/* <CreateReview /> */}
+      {/* <CreateReview /> */}
       {/* </div> */}
 
       {/* <div>
