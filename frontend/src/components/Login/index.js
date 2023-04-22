@@ -30,9 +30,10 @@ export default function Login(props) {
   return (
     <div className="parent">
       <form className="child">
+        <br></br>
         <div className="fieldDisp">LOG IN TO YOUR ACCOUNT</div>
         <div className="fieldDisp">
-          <label htmlFor="username">User Name</label>
+          <label htmlFor="username">User Name </label>
           <input
             type="text"
             id="username"
@@ -44,7 +45,7 @@ export default function Login(props) {
           />
         </div>
         <div className="fieldDisp">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Password </label>
           <input
             type="password"
             id="password"
