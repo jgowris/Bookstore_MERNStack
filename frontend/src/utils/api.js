@@ -41,8 +41,10 @@ export async function editBook(id) {
 
 //update a book
 export async function updateBook(id, formState) {
-  const updatedBookForm = await axios.put(`${urlvar}/book/${id}`);
+  const updatedBookForm = await axios.put(`${urlvar}/book/${id}`, formState);
+  return updatedBookForm.data;
 }
+
 //delete a book
 export async function deleteBook(id) {
   const deletedBook = await axios.delete(`${urlvar}/book/${id}`);
