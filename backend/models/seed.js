@@ -31,7 +31,7 @@ const initial_books = [
     sub_classification: "adult",
     status: "available",
     copies: 9,
-    image: "/images/ds_1.jpeg",
+    image: "/images/mb_1.jpeg",
   },
   {
     title: "Blowback",
