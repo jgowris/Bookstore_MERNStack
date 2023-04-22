@@ -3,5 +3,6 @@
   flex-direction: column wrap;
   justify-content: space-evenly;
   padding: 20px;
+  width: 35%;
   background-color: light orange;
 }
