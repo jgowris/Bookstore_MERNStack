@@ -4,8 +4,10 @@
   justify-content: space-evenly;
   padding: 20px;
   width: 80%;
+  background-color: light gray;
 }
 
 .booktile {
+  background-color: orange;
   width: 30%;
 }
