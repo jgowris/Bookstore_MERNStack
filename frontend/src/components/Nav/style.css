@@ -12,8 +12,10 @@ nav {
   border-bottom: 2px solid black;
   font-size: 1em;
   font-weight: bold;
-  font-family: "Dancing Script" cursive, Geneva, Verdana, sans-serif;
+  font-family: Verdana, "Dancing Script" cursive, Geneva, sans-serif;
   height: 6em;
+  background-color: black;
+  color: white;
 }
 
 nav .nav-item:nth-last-of-type(2) a {

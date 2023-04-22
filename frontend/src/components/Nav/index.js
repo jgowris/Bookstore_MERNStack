@@ -8,7 +8,7 @@ export default function Nav(props) {
   const initialState = [
     <div key="1">
       <Link to="/">
-        <h4>My Library</h4>
+        <h4>My Bookstore</h4>
       </Link>
     </div>,
   ];
@@ -61,7 +61,5 @@ export default function Nav(props) {
     }
   }, [props.isLoggedIn]);
 
-  return (
-    <nav>{navItems}</nav>
-  )
+  return <nav>{navItems}</nav>;
 }

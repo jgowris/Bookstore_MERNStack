@@ -45,7 +45,7 @@ router.put("/:id", async (req, res) => {
 
 // create Review Route
 router.put("/:id/review", async (req, res) => {
-  const book_review = await db.crystal.findByIdAndUpdate(
+  const book_review = await db.Book.findByIdAndUpdate(
     req.params.id,
     { $push: { review: req.body } },
     { new: true }
