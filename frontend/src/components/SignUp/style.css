@@ -10,4 +10,9 @@
   color: black;
   width: 50%;
   margin: 0 auto;
+  margin-top: 4em;
+}
+
+.fieldDisp {
+  margin-top: 2em;
 }

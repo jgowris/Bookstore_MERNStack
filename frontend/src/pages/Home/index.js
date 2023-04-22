@@ -32,7 +32,6 @@ export default function Home(props) {
           <Link to="/bookhome">
             <button> Browse as a guest</button>
           </Link>
-          ?
         </h3>
         <br></br>
         {/* <img src="" alt="books"></img> */}

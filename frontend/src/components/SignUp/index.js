@@ -30,8 +30,8 @@ export default function SignUp(props) {
   return (
     <div className="parent">
       <form className="child">
-        <div>Sign up to Create an Account</div>
-        <div>
+        <div className="fieldDisp">Sign up to Create an Account</div>
+        <div className="fieldDisp">
           <label htmlFor="username">User Name</label>
           <input
             type="text"
@@ -43,7 +43,7 @@ export default function SignUp(props) {
             required
           />
         </div>
-        <div>
+        <div className="fieldDisp">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -55,7 +55,7 @@ export default function SignUp(props) {
             required
           />
         </div>
-        <div>
+        <div className="fieldDisp">
           <button onClick={handleSubmit}>Sign Up</button>
         </div>
         <br></br>
