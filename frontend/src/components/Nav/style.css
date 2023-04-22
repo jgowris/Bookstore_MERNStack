@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 nav {
   display: flex;
@@ -14,8 +14,6 @@ nav {
   font-weight: bold;
   font-family: Verdana, "Dancing Script" cursive, Geneva, sans-serif;
   height: 6em;
-  background-color: black;
-  color: white;
 }
 
 nav .nav-item:nth-last-of-type(2) a {
@@ -42,6 +40,9 @@ nav .nav-item:nth-last-of-type(2) a img {
   left: 0.5em;
 }
 
+link {
+  color: ;
+}
 @media only screen and (max-device-width: 600px) {
   nav {
     padding: 0.5em;

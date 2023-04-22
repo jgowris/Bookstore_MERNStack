@@ -23,8 +23,9 @@ export default function Nav(props) {
               For Admins only: <Link to="/bookhome/addbook">Add a Book</Link>
             </div>,
             <div key="3">
-              <p>Logged in as {localStorage.username}</p>
+              <p>Welcome {localStorage.username}</p>
               <button
+                className="logoutbtn"
                 onClick={() => {
                   props.logout();
                 }}
