@@ -1,18 +1,7 @@
 .home_pg {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: column wrap;
   justify-content: space-evenly;
   padding: 20px;
   background-color: light gray;
-}
-
-.booktile {
-  background-color: orange;
-  width: 30%;
-  display: flex;
-  flex-flow: row wrap;
-  width: 30%;
-}
-.indlTile {
-  background-color: gray;
 }
