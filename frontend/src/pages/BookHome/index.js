@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function BookHome({ books, getBookById }) {
   return (
-    <div>
+    <div className="container">
       <div className="home_pg">
         {books &&
           books.map((book, i) => {

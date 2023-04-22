@@ -1,3 +1,7 @@
+.container {
+  display: flex;
+}
+
 .home_pg {
   display: flex;
   flex-direction: row wrap;
