@@ -5,6 +5,7 @@
 .home_pg {
   display: flex;
   flex-direction: row wrap;
+  height: 100%;
   /* justify-content: space-evenly; */
   /* padding: 20px; */
   background-color: orange;
