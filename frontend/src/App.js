@@ -22,7 +22,8 @@ function App() {
   const [books, setBooks] = useState([]);
   const [isLoggedIn, setLoginStatus] = useState(false);
   const [shownBook, setShownBook] = useState({});
-  // const urlvar = "http://localhost:3000";
+
+  const urlvar = "https://bookstore-mernstack.herokuapp.com";
 
   useEffect(() => {
     if (localStorage.token) {
@@ -32,7 +33,7 @@ function App() {
 
   useEffect(() => {
     async function getIndexRoute() {
-      const bookData = await axios.get(`book`);
+      const bookData = await axios.get(`${urlvar}/book`);
       setBooks(bookData.data);
     }
     getIndexRoute();
@@ -45,7 +46,7 @@ function App() {
   }
 
   async function getBookById(id) {
-    const shownBookData = await axios.get(`book/${id}`);
+    const shownBookData = await axios.get(`${urlvar}/book/${id}`);
     setShownBook(shownBookData.data);
   }
 
@@ -55,6 +56,13 @@ function App() {
 
       <Routes>
         <Route
+          path="/"
+          element={
+            <Home isLoggedIn={isLoggedIn} setLoginStatus={setLoginStatus} />
+          }
+        />
+
+        <Route
           path="/bookhome"
           element={
             <BookHome
@@ -62,13 +70,6 @@ function App() {
               books={books}
               isLoggedIn={isLoggedIn}
             />
-          }
-        />
-
-        <Route
-          path="/"
-          element={
-            <Home isLoggedIn={isLoggedIn} setLoginStatus={setLoginStatus} />
           }
         />
 

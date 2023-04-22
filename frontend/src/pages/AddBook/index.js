@@ -10,9 +10,9 @@ function AddBook({ books, setBooks }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    createBook(formState).then((data) => {
+    createBook(formState).then((bookdata) => {
       const updatedArray = [...books]; //Updates list of books on home page
-      updatedArray.push(data);
+      updatedArray.push(bookdata);
       setBooks(updatedArray);
       navigate("/bookhome");
     });
