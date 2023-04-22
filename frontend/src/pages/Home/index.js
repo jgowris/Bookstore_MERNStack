@@ -23,20 +23,19 @@ export default function Home(props) {
         <h3>
           Do you wish to{" "}
           <Link to="/user/signup">
-            <button>Sign Up</button>
-          </Link>
-          ,{" "}
+            <button> Sign Up</button>
+          </Link>{" "}
           <Link to="/user/login">
-            <button>Log In</button>
+            <button> Log In</button>
           </Link>
           or{" "}
           <Link to="/bookhome">
-            <button>Browse as a guest</button>
+            <button> Browse as a guest</button>
           </Link>
           ?
         </h3>
         <br></br>
-        <img src="" alt="books"></img>
+        {/* <img src="" alt="books"></img> */}
       </div>
     </div>
   );
