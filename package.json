@@ -20,10 +20,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend/ && npm run build && cd ../backend/ && node server.js",
+    "frontend": "cd frontend/ && react-scripts start",
+    "backend": "cd backend/ && nodemon server.js"
   },
   "eslintConfig": {
     "extends": [

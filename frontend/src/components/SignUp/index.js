@@ -17,7 +17,7 @@ export default function SignUp(props) {
       localStorage.username = data.username;
       localStorage.admin = data.admin;
       localStorage.token = data.token;
-      props.setLogInStatus(true);
+      props.setLoginStatus(true);
     });
   }
 
@@ -28,8 +28,8 @@ export default function SignUp(props) {
   }, [props.isLoggedIn]);
 
   return (
-    <div class="parent">
-      <form class="child">
+    <div className="parent">
+      <form className="child">
         <div>Sign up to Create an Account</div>
         <div>
           <label htmlFor="username">User Name</label>

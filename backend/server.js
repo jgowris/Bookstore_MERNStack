@@ -15,14 +15,14 @@ app.use(
   express.static(path.join(path.dirname(__dirname), "frontend", "build"))
 );
 
-app.use("/book", bookctrl);
+app.use("/book", bookCtrl);
 app.use("/user", userCtrl);
 app.get("*", (req, res) => {
   res.sendFile(
-    path.join(path.dirname(--dirname), "frontend", "builder", "index.html")
+    path.join(path.dirname(__dirname), "frontend", "build", "index.html")
   );
 });
 
-app.listen(process.eventNames.PORT, () => {
-  console.log("App is running om localhost: ${process.env.PORT");
+app.listen(process.env.PORT, () => {
+  console.log(`App is running on localhost: ${process.env.PORT}`);
 });

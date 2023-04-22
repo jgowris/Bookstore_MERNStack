@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import BookHome from "./pages/BookHome";
 import Home from "./pages/Home";
+import BookHome from "./pages/BookHome";
 import AddBook from "./pages/AddBook";
 import EditBook from "./pages/EditBook";
 import ShowBook from "./pages/ShowBook";
@@ -15,14 +15,14 @@ import Nav from "./components/Nav";
 import SignUp from "./components/SignUp";
 
 import "./App.css";
-import { showBook } from "./utils/api";
+// import { showBook } from "./utils/api";
 
 function App() {
   const navigate = useNavigate();
   const [books, setBooks] = useState([]);
-  const [isLoggedIn, setLoginStatus] = useState([false]);
+  const [isLoggedIn, setLoginStatus] = useState(false);
   const [shownBook, setShownBook] = useState({});
-  const urlvar = "https://mew-beginnings-app.herokuapp.com";
+  // const urlvar = "http://localhost:3000";
 
   useEffect(() => {
     if (localStorage.token) {
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     async function getIndexRoute() {
-      const bookData = await axios.get(`${urlvar}/book`);
+      const bookData = await axios.get(`book`);
       setBooks(bookData.data);
     }
     getIndexRoute();
@@ -45,13 +45,13 @@ function App() {
   }
 
   async function getBookById(id) {
-    const shownBookData = await axios.get(`${urlvar}/book/${id}`);
+    const shownBookData = await axios.get(`book/${id}`);
     setShownBook(shownBookData.data);
   }
 
   return (
     <div className="App">
-      <nav isLoggedIn={isLoggedIn} logout={logout} />
+      <Nav isLoggedIn={isLoggedIn} logout={logout} />
 
       <Routes>
         <Route

@@ -23,8 +23,8 @@ function AddBook({ books, setBooks }) {
   };
 
   return (
-    <div class="parent">
-      <form class="child" onSubmit={handleSubmit}>
+    <div className="parent">
+      <form className="child" onSubmit={handleSubmit}>
         <h2>Add a Book</h2>
         <br></br>
         <div>
@@ -119,8 +119,8 @@ function AddBook({ books, setBooks }) {
           </div>
           <div>
             <input
-              type="number"
-              id="number"
+              type="text"
+              id="copies"
               placeholder="copies"
               onChange={handleChange}
               value={formState.copies || ""}
@@ -141,7 +141,12 @@ function AddBook({ books, setBooks }) {
             />
           </div>
         </div>
+        <div>
+          <input type="submit" />
+        </div>
       </form>
     </div>
   );
 }
+
+export default AddBook;

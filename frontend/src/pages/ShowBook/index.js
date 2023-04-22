@@ -3,7 +3,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { deleteBook } from "../../utils/api";
-import { CreateReview } from "../../components/CreateReview";
+// import { CreateReview } from "../../components/CreateReview";
+// import { CreateReview } from "../../components/CreateReview"
 
 export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
   const initialState = [];
@@ -11,7 +12,7 @@ export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
 
   useEffect(() => {
     if (isLoggedIn) {
-      if (localStorage.admin == "yes") {
+      if (localStorage.admin === "yes") {
         setEditDeleteOptions(
           initialState.concat(
             <div key="1">
@@ -89,7 +90,7 @@ export default function ShowBook({ shownBook, books, setBooks, isLoggedIn }) {
       </div>
       <div>
         <p>Use the form below to leave a Review:</p>
-        <CreateReview />
+        {/* <CreateReview /> */}
       </div>
 
       <div>

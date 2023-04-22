@@ -17,7 +17,7 @@ export default function Login(props) {
       localStorage.username = data.username;
       localStorage.admin = data.admin;
       localStorage.token = data.token;
-      props.setLogInStatus(true);
+      props.setLoginStatus(true);
     });
   }
 
@@ -28,8 +28,8 @@ export default function Login(props) {
   }, [props.isLoggedIn]);
 
   return (
-    <div class="parent">
-      <form class="child">
+    <div className="parent">
+      <form className="child">
         <div>LOG IN TO YOUR ACCOUNT</div>
         <div>
           <label htmlFor="username">User Name</label>

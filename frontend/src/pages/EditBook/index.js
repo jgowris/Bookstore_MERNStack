@@ -97,6 +97,12 @@ function EditBook({ shownBook, setShownBook, books, setBooks }) {
             />
           </div>
         </div>
+        <div>
+          <div>
+            <input type="submit" />
+          </div>
+        </div>
+        <br></br>
       </form>
     </div>
   );

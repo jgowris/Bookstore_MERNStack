@@ -2,18 +2,18 @@ const db = require("./");
 
 const initial_users = [
   {
-    username: "shankar",
+    username: "admin",
     password: "123",
     admin: "yes",
   },
   {
     username: "jgowris",
-    password: "gpassword",
+    password: "123",
     admin: "no",
   },
   {
     username: "democustomer",
-    password: "dcpassword",
+    password: "123",
     admin: "no",
   },
 ];
@@ -93,34 +93,38 @@ const initial_books = [
   },
 ];
 
-db.User.deleteMany({}, (err, users) => {
-  if (err) {
-    console.log("Error occurred in remove", err);
-  } else {
-    console.log("Removed all users");
-  }
+// db.User.deleteMany({})
+// , (err, users) => {
+//   if (err) {
+//     console.log("Error occurred in remove", err);
+//   } else {
+//     console.log("Removed all users");
+//   }
 
-  db.User.create(initial_users, (err, users) => {
-    if (err) {
-      console.log("Error on creating books", err);
-    } else {
-      console.log("Created", users.length, "users");
-    }
-  });
-});
+//   db.User.create(initial_users)
+//   , (err, users) => {
+//     if (err) {
+//       console.log("Error on creating books", err);
+//     } else {
+//       console.log("Created", users.length, "users");
+//     }
+//   });
+// });
 
-db.Book.deleteMany({}, (err, books) => {
-  if (err) {
-    console.log("Error occurred in remove", err);
-  } else {
-    console.log("Removed all books");
-  }
+// db.Book.deleteMany({})
+// , (err, books) => {
+//   if (err) {
+//     console.log("Error occurred in remove", err);
+//   } else {
+//     console.log("Removed all books");
+//   }
 
-  db.Book.create(initial_books, (err, books) => {
-    if (err) {
-      console.log("Error on creating books", err);
-    } else {
-      console.log("Created", books.length, "books");
-    }
-  });
-});
+  db.Book.create(initial_books)
+//   , (err, books) => {
+//     if (err) {
+//       console.log("Error on creating books", err);
+//     } else {
+//       console.log("Created", books.length, "books");
+//     }
+//   });
+// });

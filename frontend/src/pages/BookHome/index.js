@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export default function BookHome({ books, getBookbyID }) {
+export default function BookHome({ books, getBookById }) {
   return (
     <div>
       <div class="home_pg">
         {books &&
           books.map((book, i) => {
             return (
-              <div>
+              <div key={i}>
                 <div>
                   <Link
-                    onClick={() => getBookbyID(book._id)}
+                    onClick={() => getBookById(book._id)}
                     to={`/bookhome/${book._id}`}
                   >
                     <img src={book.image} alt="Books"></img>
