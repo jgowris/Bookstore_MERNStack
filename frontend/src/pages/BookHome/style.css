@@ -5,8 +5,8 @@
 .home_pg {
   display: flex;
   flex-direction: row wrap;
-  justify-content: space-evenly;
-  padding: 20px;
+  /* justify-content: space-evenly; */
+  /* padding: 20px; */
   background-color: orange;
 }
 
@@ -14,5 +14,6 @@
   display: flex;
   flex-direction: column;
   width: 30%;
+  margin: 10px;
   background-color: lightgray;
 }
