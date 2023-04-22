@@ -9,4 +9,10 @@
 .booktile {
   background-color: orange;
   width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+}
+.indlTile {
+  background-color: gray;
 }

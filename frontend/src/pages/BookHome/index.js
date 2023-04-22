@@ -9,7 +9,7 @@ export default function BookHome({ books, getBookById }) {
           books.map((book, i) => {
             return (
               <div key={i} className="booktile">
-                <div>
+                <div className="indlTile">
                   <Link
                     onClick={() => getBookById(book._id)}
                     to={`/bookhome/${book._id}`}
