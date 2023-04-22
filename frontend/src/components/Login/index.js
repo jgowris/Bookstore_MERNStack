@@ -30,8 +30,8 @@ export default function Login(props) {
   return (
     <div className="parent">
       <form className="child">
-        <div>LOG IN TO YOUR ACCOUNT</div>
-        <div>
+        <div className="fieldDisp">LOG IN TO YOUR ACCOUNT</div>
+        <div className="fieldDisp">
           <label htmlFor="username">User Name</label>
           <input
             type="text"
@@ -43,7 +43,7 @@ export default function Login(props) {
             required
           />
         </div>
-        <div>
+        <div className="fieldDisp">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -55,7 +55,7 @@ export default function Login(props) {
             required
           />
         </div>
-        <div>
+        <div className="fieldDisp">
           <button onClick={handleSubmit}>Log In</button>
         </div>
         <br></br>
