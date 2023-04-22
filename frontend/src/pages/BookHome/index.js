@@ -4,12 +4,12 @@ import "./style.css";
 export default function BookHome({ books, getBookById }) {
   return (
     <div>
-      <div class="home_pg">
+      <div className="home_pg">
         {books &&
           books.map((book, i) => {
             return (
               <div key={i}>
-                <div>
+                <div className="booktile">
                   <Link
                     onClick={() => getBookById(book._id)}
                     to={`/bookhome/${book._id}`}
